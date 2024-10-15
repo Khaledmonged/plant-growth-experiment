@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - How Light Affects Plant Growth</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav button {
+            margin: 0 10px;
+            padding: 10px 15px;
+            background: #008CBA;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        section {
+            padding: 20px;
+            background: white;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #333;
+        }
+        h3 {
+            color: #555;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>How Light Affects Plant Growth</h1>
+        <p>Welcome to our experiment website!</p>
+    </header>
+    <nav>
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('introduction')">Introduction</button>
+        <button onclick="showSection('whatIsPolymer')">What is Polymer</button>
+        <button onclick="showSection('aboutUs')">About Us</button>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2>Home</h2>
+            <p>This website explores how light affects the growth of plants. Each section covers different aspects of our experiment, including the introduction, general ideas, variables, and information about us.</p>
+            
+            <h3>General Idea</h3>
+            <p>The experiment seeks to explore the relationship between light exposure and plant growth, measuring factors such as height and leaf count under different light conditions.</p>
+            
+            <h3>Hypothesis</h3>
+            <p>We hypothesize that plants exposed to more light will exhibit greater growth rates compared to those receiving less light, due to the increased availability of energy for photosynthesis.</p>
+            
+            <h3>Experiences Gained</h3>
+            <p>Throughout this project, we gained valuable experiences such as:</p>
+            <ul>
+                <li>Understanding the scientific method and the importance of controlled experiments.</li>
+                <li>Learning how to measure plant growth accurately and consistently.</li>
+                <li>Developing teamwork and collaboration skills while working on the project.</li>
+                <li>Gaining insights into the role of light in photosynthesis and overall plant health.</li>
+                <li>Enhancing our problem-solving abilities by troubleshooting issues that arose during the experiment.</li>
+            </ul>
+            
+            <h3>Variables</h3>
+            <p><strong>Independent Variable:</strong> The amount of light each plant receives.</p>
+            <p><strong>Dependent Variable:</strong> The growth rate of the plants (measured in height and number of leaves).</p>
+            <p><strong>Controlled Variables:</strong> Soil type, water amount, and type of plants used.</p>
+        </section>
+        <section id="introduction" style="display: none;">
+            <h2>Introduction</h2>
+            <p>We are investigating the effect of light on the growth of two types of plants: mint and beans. This experiment aims to understand how varying light conditions impact the growth rates and health of these plants.</p>
+        </section>
+        <section id="whatIsPolymer" style="display: none;">
+            <h2>What is Polymer</h2>
+            <h3>Definition of Agricultural Polymer:</h3>
+            <p>Agricultural polymers are special substances made from natural or synthetic materials that help in farming. They improve soil quality, hold water, and support plant growth.</p>
+            <h3>Example of Use:</h3>
+            <p><strong>Water Retention:</strong> Some agricultural polymers can absorb a lot of water. When mixed into the soil, they help keep it moist, so plants don’t need to be watered as often.</p>
+            <p><strong>Seed Coating:</strong> Polymers can cover seeds, protecting them and helping them grow better by keeping pests and diseases away.</p>
+            <p><strong>Controlled-Release Fertilizers:</strong> Polymers can wrap around fertilizers, allowing nutrients to be released slowly over time. This helps plants get the nutrients they need without wasting them.</p>
+            <h3>Where and Why Used:</h3>
+            <p><strong>Where:</strong> These polymers are used all over the world in different types of farming, especially in arid regions where water is scarce, such as the Middle East and North Africa.</p>
+            <p><strong>Why:</strong> They help farmers grow more crops, save water, improve soil health, and reduce the environmental impact of farming.</p>
+            <h3>Countries Using Agricultural Polymers:</h3>
+            <p>Countries like the United States, India, Australia, Brazil, Israel, Egypt, Saudi Arabia, and United Arab Emirates use agricultural polymers to enhance their farming practices, ensuring they can produce enough food while using resources efficiently.</p>
+            <h3>Advantages of Agricultural Polymers:</h3>
+            <ul>
+                <li><strong>Water Conservation:</strong> They help retain moisture in the soil, reducing the need for frequent watering, which is crucial in dry areas.</li>
+                <li><strong>Improved Crop Yields:</strong> By enhancing soil quality and nutrient availability, they can lead to healthier plants and higher crop production.</li>
+                <li><strong>Pest and Disease Protection:</strong> Seed coatings with polymers can protect seeds from pests and diseases, increasing the chances of successful germination.</li>
+                <li><strong>Reduced Fertilizer Waste:</strong> Controlled-release fertilizers minimize nutrient runoff and waste, making farming more efficient and environmentally friendly.</li>
+                <li><strong>Soil Structure Improvement:</strong> They can enhance soil structure, making it easier for roots to grow and access nutrients.</li>
+            </ul>
+            <p>Overall, agricultural polymers play a significant role in modern farming by promoting sustainability and improving food security.</p>
+        </section>
+        <section id="aboutUs" style="display: none;">
+            <h2>About Us</h2>
+            <p>We are a group of students passionate about botany and environmental science, dedicated to exploring the relationship between light and plant growth.</p>
+        </section>
+    </div>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+        // Show the home section by default
+        showSection('home');
+    </script>
+</body>
+</html>
